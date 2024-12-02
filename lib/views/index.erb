@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur mon site !, la liste de potin arrive bientôt.. Mais tu peux aller créer un nouveau potin ici !</h1>
+    <a href="/gossips/new/">Formulaire de potin</a>
+
+    <ul>
+      <% @gossips.each_with_index do |gossip, index| %>
+      <li>
+        <a href="/gossips/<%= index + 1 %>">
+        <strong><%= gossip[:author] %></strong>
+        </a>
+      </li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>

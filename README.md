@@ -1,0 +1,1 @@
+Une application en Sinatra : Un petit site avec un formulaire de potin qui intègre une base de donnée CSV.
